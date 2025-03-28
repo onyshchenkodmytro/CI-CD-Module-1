@@ -1,4 +1,7 @@
+import os
+import sys
 import pytest
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 from population_sort import read_population_data, sort_by_area, sort_by_population
 
 @pytest.fixture
